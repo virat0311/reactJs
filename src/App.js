@@ -1,24 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+function Header(){
+  return (<h1> this is a first heading in react under the header function</h1>);
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>this is ur first componenet
+    <Header/>
+
     </div>
+
   );
 }
 
