@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Guess from './Guess';
 
 function App() {
+  const ClickHandle=() =>{
+    let guessNum=Math.floor(Math.random()*9)+1;
+     console.log(guessNum);
+    let userInp=prompt("type a number bw 1-9");
+    window.alert('Computer number: ${guessNum} ,user input: ${userInp}');
+};
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        guess num bet 1-9
+      </h1>
+       <button onClick={ClickHandle}>
+       guess number B/w 1-9
+
+       </button>
+
     </div>
+   
+    
   );
 }
 
